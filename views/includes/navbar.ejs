@@ -19,6 +19,47 @@
     border-radius: 25px;
     padding: 0.5rem 3rem 0.5rem 3rem;
   }
+
+  /* Navbar always fixed on top */
+  /* .navbar {
+    z-index: 1030;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  } */
+
+  /* Search form styling */
+  /* .search-form {
+    flex-grow: 1;
+    max-width: 500px; 
+    margin: 0 10px;
+    align-items: center;
+  } */
+
+  /* Search input */
+  /* .search-inp {
+    flex: 1;
+    border-radius: 20px 0 0 20px;
+  } */
+
+  /* Search button -> width kam */
+  /* .search-btn {
+    border-radius: 0 20px 20px 0;
+    padding: 6px 12px;
+    min-width: auto;
+  } */
+
+  /* Force hamburger to stay on right side */
+  /* .navbar-toggler {
+    margin-left: auto; 
+  } */
+
+  /* Mobile view -> search bar ek line me hi rahe */
+  /* @media (max-width: 992px) {
+    .search-form {
+      order: 1;
+      flex-grow: 1;
+      max-width: 100%;
+    }
+  } */
 </style>
 
 <nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
@@ -40,11 +81,13 @@
       </div>
 
       <div class="navbar-nav ms-auto">
-        <form class="d-flex" role="search">
+        <form class="d-flex" role="search" action="/listings" method="GET">
           <input
             class="form-control me-2 search-inp"
             type="search"
-            placeholder="Search destinations"
+            name="q"
+            placeholder="Search Destinations.."
+            value="<%= typeof q !== 'undefined' ? q : '' %>"
           />
           <button class="btn search-btn" type="submit">
             <i class="fa-solid fa-magnifying-glass"></i>Search
@@ -64,3 +107,58 @@
     </div>
   </div>
 </nav>
+
+<!-- Navbar -->
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top px-3"> -->
+<!-- Brand / Compass -->
+<!-- <a class="navbar-brand d-flex align-items-center" href="/">
+    <i class="fa-regular fa-compass"></i>
+  </a> -->
+
+<!-- Search form (center) -->
+<!-- <form
+    class="d-flex mx-auto search-form"
+    role="search"
+    action="/listings"
+    method="GET"
+  >
+    <input
+      class="form-control search-inp"
+      type="search"
+      name="q"
+      placeholder="Search by title or location..."
+      value="<%= typeof q !== 'undefined' ? q : '' %>"
+    />
+    <button class="btn btn-primary search-btn" type="submit">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+  </form> -->
+
+<!-- Hamburger ALWAYS right side -->
+<!-- <button
+    class="navbar-toggler ms-2 order-3"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button> -->
+
+<!-- Collapse content -->
+<!-- <div class="collapse navbar-collapse order-4" id="navbarNavAltMarkup">
+    <div class="navbar-nav ms-auto mt-2">
+      <a class="nav-link" href="/listings">Explore</a>
+      <a class="nav-link" href="/listings/new">Airbnb your home</a>
+
+      <% if(!currUser) { %>
+      <a class="nav-link" href="/signup"><b>SignUp</b></a>
+      <a class="nav-link" href="/login"><b>Log In</b></a>
+      <% } %> <% if(currUser) { %>
+      <a class="nav-link" href="/logout"><b>Log Out</b></a>
+      <% } %>
+    </div>
+  </div>
+</nav> -->
