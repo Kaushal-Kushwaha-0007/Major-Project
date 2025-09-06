@@ -42,24 +42,24 @@ Major-Project/
 ## ⚙️ Installation & Setup
 
 1. **Clone the repository**  
-git clone https://github.com/Kaushal-Kushwaha-0007/Major-Project.git
-cd Major-Project
+`git clone https://github.com/Kaushal-Kushwaha-0007/Major-Project.git`
+`cd Major-Project`
 
 2. **Install dependencies**
-   npm install
+   `npm install`
 
-3.**Set up environment variables**   
+3. **Set up environment variables**   
 Create a .env file in the root directory and add the following:
-MAP_TOKEN=your_mapbox_token
+`MAP_TOKEN=your_mapbox_token
 CLOUDINARY_CLOUD_NAME=xxxx
 CLOUDINARY_KEY=xxxx
-CLOUDINARY_SECRET=xxxx
+CLOUDINARY_SECRET=xxxx`
 
-4.**Run the server**
-npm start
+4. **Run the server**
+`npm start`
 
-5.**Access the app**
-Open your browser and go to: http://localhost:3000
+5. **Access the app**
+`Open your browser and go to: http://localhost:3000`
 
 
 # 🚀 Project Flow
