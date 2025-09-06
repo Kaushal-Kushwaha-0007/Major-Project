@@ -27,17 +27,17 @@ This application enables users to **view, create, update, and review travel prop
 
 ---
 
-## 📂 Project Structure (Simplified)
-Major-Project/
-│── controllers/ # Business logic for listings, reviews, users
-│── models/ # Mongoose schemas (User, Listing, Review)
-│── routes/ # Express routes for users, listings, reviews
-│── views/ # EJS templates
-│── public/ # Static files (CSS, JS, images)
-│── utils/ # Helper utilities (wrapAsync, ExpressError)
-│── app.js # Main entry point
-│── package.json
-│── README.md
+## 📂 Project Structure (Simplified)  
+Major-Project/  
+│── controllers/ # Business logic for listings, reviews, users  
+│── models/ # Mongoose schemas (User, Listing, Review)  
+│── routes/ # Express routes for users, listings, reviews  
+│── views/ # EJS templates  
+│── public/ # Static files (CSS, JS, images)  
+│── utils/ # Helper utilities (wrapAsync, ExpressError)  
+│── app.js # Main entry point  
+│── package.json  
+│── README.md  
 
 ## ⚙️ Installation & Setup
 
@@ -139,5 +139,5 @@ Open your browser and go to: http://localhost:3000
 - 🖼️ **Multer + Cloud Storage** → Handles image uploads for listings  
 - 🎨 **EJS Templates** → Renders all dynamic views
 
-##📜 License
+## 📜 License  
 This project is licensed under the MIT License.
