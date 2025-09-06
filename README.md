@@ -41,26 +41,27 @@ Major-Project/
 
 ## ⚙️ Installation & Setup
 
-1. **Clone the repository**    
-git clone https://github.com/Kaushal-Kushwaha-0007/Major-Project.git
+1. **Clone the repository**
+   ```bash  
+   git clone https://github.com/Kaushal-Kushwaha-0007/Major-Project.git
 
-2. **Navigate into the project folder**  
+3. **Navigate into the project folder**  
 cd Major-Project  
 
-3. **Install dependencies**  
+4. **Install dependencies**  
    npm install
 
-4. **Set up environment variables**   
+5. **Set up environment variables**   
 Create a .env file in the root directory and add the following:  
 MAP_TOKEN=your_mapbox_token  
 CLOUDINARY_CLOUD_NAME=xxxx  
 CLOUDINARY_KEY=xxxx  
 CLOUDINARY_SECRET=xxxx  
 
-5. **Run the server**  
+6. **Run the server**  
 npm start  
 
-6. **Access the app**  
+7. **Access the app**  
 Open your browser and go to: http://localhost:3000  
 
 
