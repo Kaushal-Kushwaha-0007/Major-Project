@@ -1,16 +1,66 @@
-Project: Wanderlust – Airbnb-like Travel Listing Platform
-Tech Stack: Node.js, Express, MongoDB, EJS, Mongoose, Bootstrap
+# 🏡 Wanderlust – Airbnb-like Travel Listing Platform
 
-Developed a full-stack web application enabling users to view and explore travel property listings with dynamic routing and templating using EJS
+A **full-stack travel listing platform** inspired by Airbnb, built using **Node.js, Express, MongoDB, Mongoose, EJS, and Bootstrap**.  
+This application enables users to **view, create, update, and review travel property listings**, with integrated **authentication, image uploads, and maps**.
 
-Implemented CRUD functionalities for listings, integrated MongoDB for storage and retrieval, and used Mongoose for schema modeling
+---
 
-Designed intuitive frontend with Bootstrap and added form validations to enhance user experience
+## ✨ Features
+- 🔑 **User Authentication** – Secure signup/login/logout with Passport.js  
+- 🏡 **Listings CRUD** – Create, read, update, and delete property listings  
+- 🔎 **Search Functionality** – Search listings by title or location  
+- 📝 **Reviews System** – Add and delete reviews on listings  
+- 🖼️ **Image Uploads** – Powered by Multer and Cloudinary  
+- 🗺️ **Map Integration** – Mapbox API to display dynamic maps based on locations  
+- 🎨 **Responsive UI** – Built with Bootstrap for a clean, user-friendly design  
+- ⚙️ **Robust Backend** – Error handling, middleware, and RESTful APIs for scalability  
 
-Handled server-side rendering, routing, and middleware for clean backend logic using Express.js
+---
 
-Integrated error handling and RESTful APIs to ensure scalability and robustness
-Integrated Mapbox API to display dynamic maps based on listing locations
+## 🛠️ Tech Stack
+- **Backend**: Node.js, Express.js  
+- **Database**: MongoDB, Mongoose  
+- **Authentication**: Passport.js (Local Strategy)  
+- **Templating Engine**: EJS  
+- **Frontend Styling**: Bootstrap 5  
+- **Cloud & APIs**: Multer, Cloudinary, Mapbox Geocoding API  
+
+---
+
+## 📂 Project Structure (Simplified)
+Major-Project/
+│── controllers/ # Business logic for listings, reviews, users
+│── models/ # Mongoose schemas (User, Listing, Review)
+│── routes/ # Express routes for users, listings, reviews
+│── views/ # EJS templates
+│── public/ # Static files (CSS, JS, images)
+│── utils/ # Helper utilities (wrapAsync, ExpressError)
+│── app.js # Main entry point
+│── package.json
+│── README.md
+
+## ⚙️ Installation & Setup
+
+1. **Clone the repository**  
+git clone https://github.com/Kaushal-Kushwaha-0007/Major-Project.git
+cd Major-Project
+
+2. **Install dependencies**
+   npm install
+
+3.**Set up environment variables**   
+Create a .env file in the root directory and add the following:
+MAP_TOKEN=your_mapbox_token
+CLOUDINARY_CLOUD_NAME=xxxx
+CLOUDINARY_KEY=xxxx
+CLOUDINARY_SECRET=xxxx
+
+4.**Run the server**
+npm start
+
+5.**Access the app**
+Open your browser and go to: http://localhost:3000
+
 
 # 🚀 Project Flow
 
@@ -86,3 +136,6 @@ Integrated Mapbox API to display dynamic maps based on listing locations
 - 🗺️ **Mapbox Geocoding API** → Converts location text → longitude & latitude  
 - 🖼️ **Multer + Cloud Storage** → Handles image uploads for listings  
 - 🎨 **EJS Templates** → Renders all dynamic views
+
+##📜 License
+This project is licensed under the MIT License.
