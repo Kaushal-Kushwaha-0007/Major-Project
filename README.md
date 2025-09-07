@@ -45,23 +45,27 @@ Major-Project/
    ```bash  
    git clone https://github.com/Kaushal-Kushwaha-0007/Major-Project.git
 
-3. **Navigate into the project folder**  
-cd Major-Project  
+3. **Navigate into the project folder**
+   ```bash
+   cd Major-Project  
 
-4. **Install dependencies**  
+5. **Install dependencies**
+   ```bash
    npm install
 
-5. **Set up environment variables**   
-Create a .env file in the root directory and add the following:  
-MAP_TOKEN=your_mapbox_token  
-CLOUDINARY_CLOUD_NAME=xxxx  
-CLOUDINARY_KEY=xxxx  
-CLOUDINARY_SECRET=xxxx  
+7. **Set up environment variables**   
+   Create a .env file in the root directory and add the following:
+   ```env
+   MAP_TOKEN=your_mapbox_token  
+   CLOUDINARY_CLOUD_NAME=xxxx  
+   CLOUDINARY_KEY=xxxx  
+   CLOUDINARY_SECRET=xxxx  
 
-6. **Run the server**  
-npm start  
+9. **Run the server**
+    ```bash
+   npm start  
 
-7. **Access the app**  
+11. **Access the app**  
 Open your browser and go to: http://localhost:3000  
 
 
